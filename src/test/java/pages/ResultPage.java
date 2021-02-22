@@ -11,7 +11,7 @@ public class ResultPage extends BasePage{
     }
 
     public  WebElement clickItemTitle(String bookname){
-        String bookstitle = "//span[@class='a-size-medium a-color-base a-text-normal'][text()='"+bookname+"']";
+        String bookstitle = "//span[text()='"+bookname+"']";
         WebElement book = Driver.get().findElement(By.xpath(bookstitle));
         return book;
     }
